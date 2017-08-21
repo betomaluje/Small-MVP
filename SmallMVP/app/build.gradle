@@ -32,3 +32,29 @@ dependencies {
     })
     testCompile 'junit:junit:4.12'
 }
+
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'Small-MVP'
+
+    libraryName = 'Small-MVP'
+
+    PUBLISH_GROUP_ID = 'com.betomaluje.android'
+    PUBLISH_ARTIFACT_ID = 'small-mvp'
+    PUBLISH_VERSION = '1.0.0'
+
+    libraryDescription = 'Small lightweight library to help implement MVP pattern easily to any Android project'
+
+    siteUrl = 'https://github.com/betomaluje/Small-MVP'
+    gitUrl = 'https://github.com/betomaluje/Small-MVP.git'
+
+    developerId = 'betomaluje'
+    developerName = 'Alberto Maluje'
+    developerEmail = 'beto.maluje@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'  //Example for license
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+
+}
+apply from: 'https://raw.githubusercontent.com/blundell/release-android-library/master/android-release-aar.gradle'
